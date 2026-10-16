@@ -1,0 +1,14 @@
+name: Testujemy githuba
+on:
+ - push
+jobs:
+ build:
+  runs-on: ubuntu-latest
+  steps:
+   - run: echo 123 > test.html
+
+
+ test:
+  runs-on: ubuntu-latest
+  steps:
+   - cat test.html 
