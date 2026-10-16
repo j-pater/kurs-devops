@@ -6,9 +6,13 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - run: echo 123 > test.html
-
+   - uses: actions/upload-artifact@v7
+     with:
+      path: test.html
 
  test:
   runs-on: ubuntu-latest
   steps:
+   - uses: actions/download-artifact@v8
    - run: test -f test.html 
+
