@@ -14,5 +14,5 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - uses: actions/download-artifact@v8
-   - run: test -f test.html 
+   - run: test -f test.html
 
