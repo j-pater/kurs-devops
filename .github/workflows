@@ -11,4 +11,4 @@ jobs:
  test:
   runs-on: ubuntu-latest
   steps:
-   - cat test.html 
+   - test -f test.html 
